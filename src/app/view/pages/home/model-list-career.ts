@@ -4,11 +4,11 @@ export const ModulesListCareer = [
 	  children: [
 		{
 		  label: 'Professional Career',
-		  url:'https://www.opah.com.br/'
+		  url:''
 		},
 		{
 		  label: 'Academic Career',
-		  url:'https://www.opah.com.br/?page_id=4991'
+		  url:''
 		},
 	  ],
 	}
