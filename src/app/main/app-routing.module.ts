@@ -9,8 +9,13 @@ const routes: Routes = [
     canActivate: [AuthGuard],
   },
   {
-    path: 'Career',
-    loadChildren: () => import('../view/pages/career/career.module').then((m) => m.CareerModule),
+    path: 'professionalCareer',
+    loadChildren: () => import('../view/pages/professional-career/professional-career.module').then((m) => m.ProfessionalCareerModule),
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'academicCareer',
+    loadChildren: () => import('../view/pages/academic-career/academic-career.module').then((m) => m.AcademicCareerModule),
     canActivate: [AuthGuard],
   },
 ];

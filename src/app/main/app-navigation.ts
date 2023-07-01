@@ -5,8 +5,13 @@
      icon: 'home',
    },
    {
-    text: 'Carrer',
-     path: '/carrer',
-     icon: 'carrer',
+    text: 'Professional Carrer',
+     path: '/professionalCareer',
+     icon: 'professionalCareer',
+   },
+   {
+    text: 'Academic Carrer',
+     path: '/academicCareer',
+     icon: 'academicCareer',
    },
 ];

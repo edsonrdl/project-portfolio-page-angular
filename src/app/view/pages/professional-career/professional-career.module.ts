@@ -1,14 +1,11 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskModule } from 'ngx-mask';
-
-import { CareerComponent } from './career.component';
-import {CareerRoutingModule } from './career.routing';
+import { ProfessionalCareerComponent } from './professional-career.component';
+import {ProfessionalCareerRoutingModule } from './professional-career.routing';
 import { throwIfAlreadyLoaded } from '../../../services/guards/module-import.guard';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
 import { MatSliderModule } from '@angular/material/slider';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -18,7 +15,7 @@ import { MatButtonModule } from '@angular/material/button';
 @NgModule({
   imports: [
     FlexLayoutModule,
-    CareerRoutingModule,
+    ProfessionalCareerRoutingModule,
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
@@ -29,11 +26,11 @@ import { MatButtonModule } from '@angular/material/button';
     MatButtonModule,
   ],
   exports: [],
-  declarations: [CareerComponent],
+  declarations: [ProfessionalCareerComponent],
   providers: [],
 })
-export class CareerModule {
-  constructor(@Optional() @SkipSelf() parentModule: CareerModule) {
-    throwIfAlreadyLoaded(parentModule, 'CareerModule');
+export class ProfessionalCareerModule {
+  constructor(@Optional() @SkipSelf() parentModule: ProfessionalCareerModule) {
+    throwIfAlreadyLoaded(parentModule, 'ProfessionalCareerModule');
   }
 }

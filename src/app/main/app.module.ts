@@ -28,10 +28,6 @@ export function getBaseHref(platformLocation: PlatformLocation): string {
     BrowserAnimationsModule,
     FontAwesomeModule,
     MatDialogModule
-
-
-
-
     ],
   providers: [{ provide: PortfolioPageRepository, useClass: PortfolioPageWebRepository }],
   bootstrap: [AppComponent],
