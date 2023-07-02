@@ -4,7 +4,6 @@
 <head>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
-
 <body class="page-body">
   <section class="section-header">
     <div class="line-div">
@@ -20,23 +19,22 @@
       <div class="widget-menu-dropdown-toggle">
         <div class="menu-main-active">
           <nav class="nav-menu-main">
-            <div class="menu-main-itens">
-              <div class="menu-main-item">
+              <li class="menu-main-item">
                 <a href="home" class="item-active-menu-main">HOME</a>
-              </div>
-              <div class="menu-main-item">
+              </li>
+              <li class="menu-main-item">
                 <a href="#sections-portfolio-presentation" class="item-active-menu-main"
                   (click)="scrollToSection($event, 'sections-portfolio-presentation')">PORTFÓLIO</a>
-              </div>
-              <div class="menu-main-item">
+              </li>
+              <li class="menu-main-item">
                 <a href="#section-about-me" class="item-active-menu-main"
                   (click)="scrollToSection($event, 'section-about-me')">ABOUT ME</a>
-              </div>
-              <div class="menu-main-item">
+              </li>
+              <li class="menu-main-item">
                 <a href="#sections-contacts-presentation" class="item-active-menu-main"
                   (click)="scrollToSection($event, 'sections-contacts-presentation')">CONTACTS</a>
-              </div>
-              <div class="menu-main-item-projects">
+              </li>
+              <li class="menu-main-item-projects">
                 <ng-container *ngFor="let menuItem of ModulesListProjects">
                   <ng-container *ngIf="!menuItem.children">
                     <a>
@@ -53,7 +51,7 @@
                     <mat-menu class="mat-menu-main" #levelOne="matMenu" direction="down" yPosition="below">
                       <ng-container *ngFor="let childL1 of menuItem.children">
                         <div class="background-list-modal" *ngIf="!childL1.children" mat-menu-item>
-                          <a class="link-label" *ngIf="!childL1.url">{{childL1.label}}
+                          <a class="text-link-label-menu-main" *ngIf="!childL1.url">{{childL1.label}}
                             <i *ngIf="childL1.icon" [ngClass]="childL1.icon"></i>
                           </a>
                           <a class="link-url" *ngIf="childL1.url" [href]="childL1.url">{{childL1.label}}
@@ -64,8 +62,8 @@
                     </mat-menu>
                   </ng-container>
                 </ng-container>
-              </div>
-              <div class="menu-main-item-careers">
+              </li>
+              <li class="menu-main-item-careers">
                 <ng-container *ngFor="let menuItem of ModulesListCareer">
                   <ng-container *ngIf="!menuItem.children">
                     <a>
@@ -82,7 +80,7 @@
                     <mat-menu class="mat-menu-main" #levelOne="matMenu" direction="down" yPosition="below">
                       <ng-container *ngFor="let childL1 of menuItem.children">
                         <li class="background-list-modal" *ngIf="!childL1.children" mat-menu-item>
-                          <a class="link-label" *ngIf="!childL1.url">{{childL1.label}}
+                          <a class="text-link-label-menu-main" *ngIf="!childL1.url">{{childL1.label}}
                             <i *ngIf="childL1.icon" [ngClass]="childL1.icon"></i>
                           </a>
                           <a class="link-url" *ngIf="childL1.url" [href]="childL1.url">{{childL1.label}}
@@ -93,17 +91,14 @@
                     </mat-menu>
                   </ng-container>
                 </ng-container>
-              </div>
-            </div>
+              </li>
           </nav>
         </div>
         <div class="menu-toggle-mobile-active" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="true">
-          <div class="widget-menu-dropdown-toggle">
             <button class="bnt-menu-mobile" id="bnt-menu-mobile" #button mat-button (click)="btnMobile($event)">
               <fa-icon id="faBars" aria-hidden="false" role="presentation" [icon]="faBars"></fa-icon>
               <fa-icon id="faXmark" aria-hidden="false" [icon]="faXmark"></fa-icon>
             </button>
-          </div>
         </div>
       </div>
     </div>
@@ -111,23 +106,22 @@
     </div>
     <div class="menu-mobile">
       <nav id="nav-menu-mobile">
-        <div class="menu-mobile-itens">
-          <div class="menu-mobile-item">
+          <li class="menu-mobile-item">
             <a  href="home" class="item-active-menu-mobile">HOME</a>
-          </div>
-          <div class="menu-mobile-item">
+          </li>
+          <li class="menu-mobile-item">
             <a href="#sections-portfolio-presentation" class="item-active-menu-mobile"
               (click)="scrollToSection($event, 'sections-portfolio-presentation')">PORTFÓLIO</a>
-          </div>
-          <div class="menu-mobile-item">
+          </li>
+          <li class="menu-mobile-item">
             <a href="#section-about-me" class="item-active-menu-mobile"
               (click)="scrollToSection($event, 'section-about-me')">ABOUT ME</a>
-          </div>
-          <div class="menu-mobile-item">
+          </li>
+          <li class="menu-mobile-item">
             <a href="#sections-contacts-presentation" class="item-active-menu-mobile"
               (click)="scrollToSection($event, 'sections-contacts-presentation')">CONTACTS</a>
-          </div>
-          <div class="menu-mobile-item-projects">
+          </li>
+          <li class="menu-mobile-item-projects">
             <ng-container *ngFor="let menuItem of ModulesListProjects">
               <ng-container *ngIf="!menuItem.children">
                 <a>
@@ -149,7 +143,7 @@
                   <ng-container *ngFor="let childL1 of menuItem.children">
                     <div class="background-list-modal" *ngIf="!childL1.children" mat-menu-item>
 
-                      <a class="link-label" *ngIf="!childL1.url">{{childL1.label}}
+                      <a class="text-link-label-menu-mobile" *ngIf="!childL1.url">{{childL1.label}}
                         <i *ngIf="childL1.icon" [ngClass]="childL1.icon"></i>
                       </a>
                       <a class="link-url" *ngIf="childL1.url" [href]="childL1.url">{{childL1.label}}
@@ -160,8 +154,8 @@
                 </mat-menu>
               </ng-container>
             </ng-container>
-          </div>
-          <div class="menu-mobile-item-careers">
+          </li>
+          <li class="menu-mobile-item-careers">
             <ng-container *ngFor="let menuItem of ModulesListCareer">
               <ng-container *ngIf="!menuItem.children">
                 <a class="">
@@ -182,7 +176,7 @@
                   </div>
                   <ng-container *ngFor="let childL1 of menuItem.children">
                     <li class="background-list-modal" *ngIf="!childL1.children" mat-menu-item>
-                      <a class="link-label" *ngIf="!childL1.url">{{childL1.label}}
+                      <a class="text-link-label-menu-mobile" *ngIf="!childL1.url">{{childL1.label}}
                         <i *ngIf="childL1.icon" [ngClass]="childL1.icon"></i>
                       </a>
                       <a class="link-url" *ngIf="childL1.url" [href]="childL1.url">{{childL1.label}}
@@ -193,8 +187,7 @@
                 </mat-menu>
               </ng-container>
             </ng-container>
-          </div>
-        </div>
+          </li>
       </nav>
     </div>
   </section>
@@ -223,9 +216,9 @@
           </div>
         </div>
         <div class="column-img-apresentation-guys">
-              <div class="img-apresentation-guys" id="img-apresentation-guys-mask-1" >
+              <div class="img-apresentation-guys"  >
               </div>
-              <div class="img-apresentation-guys" id="img-apresentation-guys-mask-2" >
+              <div class="img-apresentation" id="img-apresentation-guys-mask-2" >
                    <img class="img-guys" id="img-guys-mask" src="../../../../assets/my.png" alt="">
               </div>
         </div>
