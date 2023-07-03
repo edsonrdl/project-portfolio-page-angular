@@ -482,11 +482,6 @@ html{
   justify-content: space-around;
   align-items: flex-end;
 }
-@media (max-width:  1024px){
-  .column-text-img-guys-apresentation-initial{
-
-    }
-}
 .column-text-apresentation-initial{
   width: 100%;
   height: 100%;
@@ -660,6 +655,7 @@ html{
   display: flex;
   min-height: 1px;
   position: relative;
+  bottom: 10px;
 }
 .column-social-widget-wrap-social {
   align-content: center;
@@ -720,14 +716,18 @@ html{
   background-image: linear-gradient(315deg,#03a9f4,#ff0058 100%);
   transition: all .9s;
 }
-.container-social-icons div {
+.container-social-icons{
   list-style: none;
 }
-.container-social-icons div .fa-brands {
-  width: 14px;
+.brands {
+  width: 16px;
+  height: 16px;
 }
-.container-social-icons div .fa-facebook {
-  width: 10px;
+@media (max-width:1024px){
+  .brands {
+    width: 60px;
+    height: 60px;
+  }
 }
 .container-social-icons div a {
   position: relative;
@@ -746,7 +746,6 @@ html{
 .container-social-icons div a:hover {
   fill: currentColor;
   color: rgba(255, 255, 255, 1);
-
 }
 /* sections-portfolio-presentation */
 .sections-portfolio-presentation{
@@ -775,73 +774,61 @@ html{
 /* section-portfolio-collection-cards-1*/
 .section-portfolio-collection-cards-1 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  flex-direction: row;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   background: #000000;
   width: auto;
   height: auto;
   padding: 0px 10px 0px 10px;
   align-content: space-around;
-
-}
-@media (max-width: 1440px) {
-  .section-portfolio-collection-cards-1{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 }
 @media (max-width: 1024px) {
-.section-portfolio-collection-cards-1{
+  .section-portfolio-collection-cards-1{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
-}
-.container-portfolio-collection-cards-1{
-  width:auto;
-  margin-top: 2px;
-  margin-bottom: 50px;
 }
 /*section-portfolio-collection-cards-2*/
 .section-portfolio-collection-cards-2 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  flex-direction: row;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   background: #000000;
   width: auto;
   height: auto;
   padding: 0px 10px 0px 10px;
   align-content: space-around;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1024px) {
   .section-portfolio-collection-cards-2{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
-@media (max-width: 1024px) {
-  .section-portfolio-collection-cards-2 {
-    display: grid;
-    grid-template-columns: 1fr !important;
-  }
+// @media (max-width: 1024px) {
+// .section-portfolio-collection-cards-1{
+//     display: grid;
+//     grid-template-columns: 1fr;
+//   }
+// }
+// @media (max-width: 1024px) {
+//   .section-portfolio-collection-cards-2 {
+//     display: grid;
+//     grid-template-columns: 1fr !important;
+//   }
+// }
+/*Cards*/
+.container-portfolio-collection-cards{
+  width:auto;
+  position: relative;
+  top: 10px;
+  margin-top: 2px;
 }
 .portfolio-card {
   display: flex;
-  margin: 10px;
+  position: relative;
+  top: 5px;
   background: #0a0a0a;
   flex-wrap: nowrap;
   justify-content: space-around;
-}
-@media (max-width: 1440px) {
-  .section-portfolio-collection-cards-2{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-@media (max-width: 1024px) {
-  .portfolio-card{
-    display: grid;
-    grid-template-columns: 1fr;
-  }
 }
 .card-main{
   width: auto;
@@ -910,16 +897,19 @@ html{
 .container-button-card{
   display: flex;
   flex-direction: row;
+  gap: 13px;
   width: 100%;
-  justify-content: space-around;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 1024px) {
   .container-button-card {
     display: flex;
     flex-direction: row;
     width: 100%;
-    align-content: space-between;
-    justify-content: space-around;
+    height: 50px;
+    margin-top: 5px;
   }
 }
 .button-card-port-1 {
@@ -929,12 +919,17 @@ html{
   border-radius: 0px;
   transition: all .3s;
  }
+ @media (max-width: 1024px) {
+  .button-card-port-1 {
+    width: 240px;
+    height: 50px;
+  }
+}
  .button-card-port-2 {
   padding: 1px 5px 1px 5px;
   border: unset;
   border-radius: 0px;
   color: #DBD8E3;
-
   background: #0c0c0c;
   position: relative;
   font-weight: 1000;
@@ -947,6 +942,12 @@ html{
   transition: all .2s;
     z-index: 5;
  }
+ @media (max-width: 1024px) {
+  .button-card-port-2 {
+    width: 240px;
+    height: 50px;
+  }
+}
  .button-card-port-2:hover {
   transform: scale(0.98);
   border-radius: 0px;
