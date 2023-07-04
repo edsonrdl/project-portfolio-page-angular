@@ -80,10 +80,10 @@
                     <mat-menu class="mat-menu-main" #levelOne="matMenu" direction="down" yPosition="below">
                       <ng-container *ngFor="let childL1 of menuItem.children">
                         <li class="background-list-modal" *ngIf="!childL1.children" mat-menu-item>
-                          <a class="text-link-label-menu-main" *ngIf="!childL1.url">{{childL1.label}}
+                          <a class="text-link-label-menu-main" *ngIf="!childL1.pach">{{childL1.label}}
                             <i *ngIf="childL1.icon" [ngClass]="childL1.icon"></i>
                           </a>
-                          <a class="link-url" *ngIf="childL1.url" [href]="childL1.url">{{childL1.label}}
+                          <a class="link-url" *ngIf="childL1.pach" [href]="childL1.pach">{{childL1.label}}
                             <i *ngIf="childL1.icon" [ngClass]="childL1.icon"></i>
                           </a>
                         </li>
@@ -195,18 +195,18 @@
     <div class="background-img-presentation-container">
       <img class="background-img" src="../../../../assets/background-presentation.jpg">>
     </div>
-    <div class="container-apresentation-initial">
-      <div class="column-text-img-guys-apresentation-initial">
-        <div class="column-text-apresentation-initial">
-          <div class="container-text-apresentation-initial">
-            <div class="text-apresentation-initial">
-              <h1 class="text-apresentation-initial-h1">hello community,</h1>
+    <div class="container-presentation-initial">
+      <div class="column-text-img-guys-presentation-initial">
+        <div class="column-text-presentation-initial">
+          <div class="container-text-presentation-initial">
+            <div class="text-presentation-initial">
+              <h1 class="text-presentation-initial-h1">hello community,</h1>
             </div>
-            <div class="text-apresentation-initial">
-              <p class="text-apresentation-initial-p1">I'm a junior software developer</p>
+            <div class="text-presentation-initial">
+              <p class="text-presentation-initial-p1">I'm a junior software developer</p>
             </div>
-            <div class="text-apresentation-initial">
-              <p class="text-apresentation-initial-p2">Welcome to my portfolio!</p>
+            <div class="text-presentation-initial">
+              <p class="text-presentation-initial-p2">Welcome to my portfolio!</p>
             </div>
             <div class="button-about-me-1">
               <button class="button-about-me-2" href="#section-about-me"
@@ -215,10 +215,10 @@
             </div>
           </div>
         </div>
-        <div class="column-img-apresentation-guys">
-              <div class="img-apresentation-guys"  >
+        <div class="column-img-presentation-guys">
+              <div class="img-presentation-guys"  >
               </div>
-              <div class="img-apresentation" id="img-apresentation-guys-mask-2" >
+              <div class="img-presentation" id="img-presentation-guys-mask-2" >
                    <img class="img-guys" id="img-guys-mask" src="../../../../assets/my.png" alt="">
               </div>
         </div>
