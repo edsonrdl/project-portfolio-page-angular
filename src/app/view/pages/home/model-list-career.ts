@@ -4,11 +4,11 @@ export const ModulesListCareer = [
 	  children: [
 		{
 		  label: 'Professional Career',
-		  url:''
+		  pach:''
 		},
 		{
 		  label: 'Academic Career',
-		  url:''
+		  pach:'/academicCareer'
 		},
 	  ],
 	}
