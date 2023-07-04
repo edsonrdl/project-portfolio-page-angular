@@ -863,6 +863,11 @@ html{
   font-weight: bold;
   margin-bottom: 10px;
 }
+@media (max-width:1024px){
+  .texto-portfolio-presentation {
+    font-size: 2rem;
+  }
+}
 /* section-portfolio-collection-cards-1*/
 .section-portfolio-collection-cards-1 {
   display: grid;
@@ -1041,6 +1046,11 @@ html{
   font-weight: 500;
   font-weight: bold;
   margin-bottom: 10px;
+}
+@media (max-width:1024px){
+  .texto-about-me-presentation{
+    font-size: 2rem;
+  }
 }
 .container-about-me{
   background-color: #000000;
@@ -1510,7 +1520,7 @@ background: #000000;
   margin-top: 50px;
   margin-bottom: 20px;
 }
-.texto-contacts-presentation{
+.text-contacts-presentation{
   display: flex;
   margin: 10px;
   color: #DBD8E3;
@@ -1519,6 +1529,11 @@ background: #000000;
   font-weight: 500;
   font-weight: bold;
   margin-bottom: 10px;
+}
+@media (max-width:1024px){
+  .text-contacts-presentation{
+    font-size: 2rem;
+  }
 }
 .section-contacts{
   background-color: #000000;
