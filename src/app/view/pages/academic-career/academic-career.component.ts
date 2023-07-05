@@ -4,7 +4,6 @@ import { faBars, faChevronDown,faXmarksLines,faLaptopCode,faXmark,} from '@forta
 import { ModulesListCareer } from '../../components/model-list/model-list-career';
 import { ModulesListProjects } from '../../components/model-list/model-list-projects';
 
-
 @Component({
   selector: 'app-menu',
   templateUrl: 'academic-career.component.html',
@@ -27,6 +26,16 @@ export class AcademicCareerComponent {
   constructor(private ren: Renderer2 ,private dialogRef: MatDialog,private elementRef: ElementRef) {
     this.ModulesListProjects = ModulesListProjects;
     this.ModulesListCareer = ModulesListCareer;
+    this.changeText = false;
+  }
+
+  hide(): void {
+    const elem = document.getElementById('popup1');
+    elem!.style.display = 'none';
+  }
+
+  changeText: boolean;
+  teste1(){
   }
   btnMobile(event: Event){
     const navMenuMobile=document.getElementById('nav-menu-mobile');

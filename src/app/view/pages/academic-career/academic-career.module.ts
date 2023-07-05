@@ -11,25 +11,28 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {MatMenuModule} from '@angular/material/menu';
+import { TreeListAcademicModule } from "../../components/tree-list-academic.component/tree-list-academic.module";
 
 
 @NgModule({
-  imports: [
-    AcademicCareerRoutingModule,
-    CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
-    MatSliderModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatCardModule,
-    MatButtonModule,
-    FontAwesomeModule,
-    MatMenuModule,
-  ],
-  exports: [],
-  declarations: [AcademicCareerComponent],
-  providers: [],
+    bootstrap: [AcademicCareerComponent],
+    exports: [],
+    declarations: [AcademicCareerComponent],
+    providers: [],
+    imports: [
+        AcademicCareerRoutingModule,
+        CommonModule,
+        FormsModule,
+        ReactiveFormsModule,
+        MatSliderModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatCardModule,
+        MatButtonModule,
+        FontAwesomeModule,
+        MatMenuModule,
+        TreeListAcademicModule
+    ]
 })
 export class AcademicCareerModule {
   constructor(@Optional() @SkipSelf() parentModule: AcademicCareerModule) {

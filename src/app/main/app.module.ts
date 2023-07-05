@@ -3,16 +3,13 @@ import {
 } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { PortfolioPageRepository } from '../core/repositories/portfolio-page.repository';
 import { PortfolioPageWebRepository } from '../data/repository/portfolio-page-web-repository/portfolio-page-web.repository';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatDialogModule } from '@angular/material/dialog';
-
 
 export function getBaseHref(platformLocation: PlatformLocation): string {
   return platformLocation.getBaseHrefFromDOM();
@@ -21,13 +18,11 @@ export function getBaseHref(platformLocation: PlatformLocation): string {
 @NgModule({
   declarations: [AppComponent],
   imports: [
-    FlexLayoutModule,
-    BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
-    MatDialogModule
+    MatDialogModule,
     ],
   providers: [{ provide: PortfolioPageRepository, useClass: PortfolioPageWebRepository }],
   bootstrap: [AppComponent],
