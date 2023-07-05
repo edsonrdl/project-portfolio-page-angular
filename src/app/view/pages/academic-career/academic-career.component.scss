@@ -754,15 +754,16 @@ html{
   fill: currentColor;
   color: rgba(255, 255, 255, 1);
 }
-/* sections-portfolio-presentation */
-.sections-portfolio-presentation{
+/* sections-list-of-studies-presentation */
+.sections-list-of-studies-presentation{
   position: relative;
   width: 100%;
   height: auto;
-  background-image: repeating-linear-gradient(to left, #0f0f0f, #000000, #0f0f0f);
+
+  background-image: repeating-linear-gradient(to left, #131313, #272727, #131313);
   z-index:4;
 }
-.portfolio-presentation {
+.list-of-studies-presentation{
   display: flex;
   height: auto;
   justify-content: center;
@@ -770,7 +771,7 @@ html{
   margin-top: 55px;
   margin-bottom: 20px;
 }
-.texto-portfolio-presentation {
+.texto-list-of-studies-presentation{
   display: flex;
   margin: 10px;
   color: #DBD8E3;

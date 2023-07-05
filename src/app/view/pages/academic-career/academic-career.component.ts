@@ -1,7 +1,7 @@
 import { Component , Renderer2, ElementRef, OnInit} from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { faBars, faChevronDown,faXmarksLines,faLaptopCode,faXmark,} from '@fortawesome/free-solid-svg-icons';
-import { ModulesListCareer } from '../home/model-list-career';
+import { ModulesListCareer } from '../../components/model-list-career.component/model-list-career';
 import { ModulesListProjects } from '../home/model-list-projects';
 
 

@@ -8,7 +8,7 @@ export const ModulesListCareer = [
 		},
 		{
 		  label: 'Academic Career',
-		  pach:'/academicCareer'
+		  pach:'/academic'
 		},
 	  ],
 	}
