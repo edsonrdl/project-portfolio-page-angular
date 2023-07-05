@@ -11,8 +11,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {MatMenuModule} from '@angular/material/menu';
-
-
+import { ModelListAcademicModule } from './model-list-academic/model-list-academic.module';
 
 
 @NgModule({
@@ -28,7 +27,7 @@ import {MatMenuModule} from '@angular/material/menu';
     MatButtonModule,
     FontAwesomeModule,
     MatMenuModule,
-
+    ModelListAcademicModule
   ],
   exports: [],
   declarations: [AcademicCareerComponent],
