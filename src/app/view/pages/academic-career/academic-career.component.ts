@@ -27,16 +27,6 @@ export class AcademicCareerComponent {
   constructor(private ren: Renderer2 ,private dialogRef: MatDialog,private elementRef: ElementRef) {
     this.ModulesListProjects = ModulesListProjects;
     this.ModulesListCareer = ModulesListCareer;
-    this.changeText = false;
-  }
-
-  hide(): void {
-    const elem = document.getElementById('popup1');
-    elem!.style.display = 'none';
-  }
-
-  changeText: boolean;
-  teste1(){
   }
   btnMobile(event: Event){
     const navMenuMobile=document.getElementById('nav-menu-mobile');
