@@ -12,7 +12,6 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {MatMenuModule} from '@angular/material/menu';
-import { ModelListCareerModule } from '../../components/model-list-career.component/model-list-career.module';
 
 
 
@@ -31,7 +30,6 @@ import { ModelListCareerModule } from '../../components/model-list-career.compon
     MatButtonModule,
     FontAwesomeModule,
     MatMenuModule,
-    ModelListCareerModule
 
   ],
   exports: [],
