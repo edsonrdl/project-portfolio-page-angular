@@ -1,35 +1,18 @@
 import { Component } from "@angular/core";
 import { FlatTreeControl } from "@angular/cdk/tree";
 import { MatTreeFlatDataSource, MatTreeFlattener }from "@angular/material/tree";
-
+import {ModelListAcademic} from "../model-list/model-list-academic";
 interface Family {
 name: string;
 children?: Family[];
 }
 
-const FAMILY_TREE: Family[] = [
-{
-	name: "Joyce",
-	children: [
-	{ name: "Mike" },
-	{ name: "Will" },
-	{ name: "Eleven", children: [{ name: "Hopper" }] },
-	{ name: "Lucas" },
-	{ name: "Dustin", children: [{ name: "Winona" }] },
-	],
-},
-{
-	name: "Jean",
-	children: [{ name: "Otis" }, { name: "Maeve" }],
-},
-];
-
+const FAMILY_TREE: Family[] = ModelListAcademic;
 interface ExampleFlatNode {
 expandable: boolean;
 name: string;
 level: number;
 }
-
 @Component({
 selector: "app-tree-list-academic",
 templateUrl: "./tree-list-academic.component.html",
@@ -59,7 +42,6 @@ treeFlattener = new MatTreeFlattener(
 
 dataSource = new MatTreeFlatDataSource(
 	this.treeControl, this.treeFlattener);
-
 constructor() {
 	this.dataSource.data = FAMILY_TREE;
 }

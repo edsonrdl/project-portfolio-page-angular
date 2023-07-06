@@ -1,5 +1,44 @@
-h1, h3 {
-  color: green;
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins" sans-serif, ;
+
+}
+html{
+  font-size: 62.5%;
+}
+.list-academic{
+  position: absolute;
+  width:100%;
+  height: auto;
+  background-image: linear-gradient(315deg,#000000,#2c2c2c  100%);
+  border: 10px solid;
+  border-image: linear-gradient(315deg,#00aeff,#ff0059 100%) 1;
+  animation: animate-mask 5s linear infinite;
+}
+@keyframes animate-mask {
+  0% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+.column-text-study-topic{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h1, h2 {
+  color: rgb(73, 73, 73);
   font-family: "Roboto", sans-serif;
   text-align: center;
   }
