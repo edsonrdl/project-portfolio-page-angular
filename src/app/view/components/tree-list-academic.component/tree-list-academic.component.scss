@@ -11,11 +11,48 @@
 html{
   font-size: 62.5%;
 }
-.list-academic{
-  position: absolute;
+/*Container list study*/
+.container-list-study{
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.column-text-study-list{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.study-text-topic {
+  position: relative;
+  top:10px;
+  color: white;
+  Font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
+  font-size: 3rem;
+  text-align: center;
+  }
+.study-text-topic-attention{
+  color: white;
+  Font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
+  text-align: center;
+  }
+.icon-faExclamationTriangle{
+  color: rgb(255, 0, 0);
+  width: 20px;
+  height: 20px;
+}
+.column-list-study{
+  display: flex;
+  flex-direction: column;
+}
+.column-lst-academic-development-technologies-and-IT-infrastructure{
   width:100%;
   height: auto;
-  background-image: linear-gradient(315deg,#000000,#2c2c2c  100%);
   border: 10px solid;
   border-image: linear-gradient(315deg,#00aeff,#ff0059 100%) 1;
   animation: animate-mask 5s linear infinite;
@@ -32,21 +69,31 @@ html{
     opacity: 0.3;
   }
 }
-.column-text-study-topic{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-h1, h2 {
-  color: rgb(73, 73, 73);
-  font-family: "Roboto", sans-serif;
+.title-list{
+  color: white;
   text-align: center;
-  }
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 500;
+  font-weight: bold;
+  background-image: repeating-linear-gradient(to left, #131313, #272727, #131313);
+}
 
-  .mat-tree {
-  background: transparent;
-  }
+.mat-tree-button{
+  background-color:transparent;
+}
+.mat-icon-rtl-mirror{
+  color: rgb(255, 255, 255);
+  background-color:transparent;
+}
+.mat-tree {
+  background: rgb(38, 38, 38);
 
-  .mat-tree-node {
-  color: black;
-  }
+}
+.mat-tree-node {
+  color: rgb(255, 255, 255);
+  font-size: 0.7rem;
+}
+

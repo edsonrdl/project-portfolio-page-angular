@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 import { FlatTreeControl } from "@angular/cdk/tree";
 import { MatTreeFlatDataSource, MatTreeFlattener }from "@angular/material/tree";
 import {ModelListAcademic} from "../model-list/model-list-academic";
-import {faExclamation} from '@fortawesome/free-solid-svg-icons';
+import {faExclamationTriangle} from '@fortawesome/free-solid-svg-icons';
 interface Family {
 name: string;
 children?: Family[];
@@ -21,7 +21,7 @@ styleUrls: ["./tree-list-academic.component.scss"],
 })
 
 export class TreeListAcademicComponent   {
-  faExclamation=faExclamation
+  faExclamationTriangle=faExclamationTriangle
 private _transformer = (node: Family, level: number) => {
 	return {
 	expandable: !!node.children && node.children.length > 0,
