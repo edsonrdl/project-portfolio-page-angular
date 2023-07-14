@@ -48,39 +48,9 @@ html{
 }
 .column-list-study{
   display: flex;
-  flex-direction: column;
-}
-.column-lst-academic-development-technologies-and-IT-infrastructure{
-  width:100%;
-  height: auto;
-  border: 10px solid;
-  border-image: linear-gradient(315deg,#00aeff,#ff0059 100%) 1;
-  animation: animate-mask 5s linear infinite;
-}
-@keyframes animate-mask {
-  0% {
-    opacity: 0.3;
-  }
-
-  50% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 0.3;
-  }
-}
-.title-list{
-  color: white;
-  text-align: center;
+  flex-direction: row;
   width: 100%;
-  height: 100%;
-  font-size: 1.5rem;
-  margin: 0;
-  font-weight: 500;
-  font-weight: bold;
-  background-image: repeating-linear-gradient(to left, #131313, #272727, #131313);
 }
-
 .mat-tree-button{
   background-color:transparent;
 }
@@ -90,10 +60,11 @@ html{
 }
 .mat-tree {
   background: rgb(38, 38, 38);
-
+  width: 100%;
+  border: 2px solid;
+  border-image: linear-gradient(315deg,#00aeff,#ff0059 100%) 1;
 }
 .mat-tree-node {
   color: rgb(255, 255, 255);
   font-size: 0.7rem;
 }
-

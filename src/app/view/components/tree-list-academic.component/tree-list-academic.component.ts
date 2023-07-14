@@ -4,14 +4,14 @@ import { MatTreeFlatDataSource, MatTreeFlattener }from "@angular/material/tree";
 import {ModelListAcademic} from "../model-list/model-list-academic";
 import {faExclamationTriangle} from '@fortawesome/free-solid-svg-icons';
 interface Family {
-name: string;
+label: string;
 children?: Family[];
 }
 
 const FAMILY_TREE: Family[] = ModelListAcademic;
 interface ExampleFlatNode {
 expandable: boolean;
-name: string;
+label: string;
 level: number;
 }
 @Component({
@@ -21,11 +21,12 @@ styleUrls: ["./tree-list-academic.component.scss"],
 })
 
 export class TreeListAcademicComponent   {
+  ModelListAcademic: Array<any>;
   faExclamationTriangle=faExclamationTriangle
 private _transformer = (node: Family, level: number) => {
 	return {
 	expandable: !!node.children && node.children.length > 0,
-	name: node.name,
+	label: node.label,
 	level: level,
 	};
 } ;
@@ -45,6 +46,7 @@ treeFlattener = new MatTreeFlattener(
 dataSource = new MatTreeFlatDataSource(
 	this.treeControl, this.treeFlattener);
 constructor() {
+    this.ModelListAcademic = ModelListAcademic;
 	this.dataSource.data = FAMILY_TREE;
 }
 
