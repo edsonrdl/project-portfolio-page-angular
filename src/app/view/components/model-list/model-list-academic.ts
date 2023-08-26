@@ -673,6 +673,89 @@ export const ModelListAcademic = [
           },
         ],
       },
+      {
+        label: 'JavaScript/POO(Programação orientada a objetos)',
+        children: [
+          {
+            label: 'Conceitos básicos',
+            children: [
+              { label: 'Classes e objetos' },
+              { label: 'Propriedades e métodos'},
+              { label: 'Herança e polimorfismo'},
+            ],
+          },
+          {
+            label: 'Sintaxe do ES6',
+            children: [
+              { label: 'Spread syntax',},
+              { label: 'Default parameters '},
+            ],
+          },
+          {
+            label: 'Promises',
+            children: [
+              { label: 'Sintaxe de promises'},
+              { label: 'Encadeamento de promises'},
+              { label: 'Tratamento de erros com promises'},
+            ],
+          },
+          {
+            label: 'Destructuring',
+            children: [
+              { label: 'Destructuring de arrays'},
+              { label: 'Destructuring de objetos'},
+              { label: 'Destructuring de parâmetros de funções'},
+            ],
+          },
+          {
+            label: 'Iteradores e iteráveis',
+            children: [
+              { label: 'Sintaxe de iteradores'},
+              { label: 'Criando iteráveis personalizados'},
+              { label: 'Símbolo iterator'},
+            ],
+          },
+          {
+            label: 'Maps e sets',
+            children: [
+              { label: 'Sintaxe de Map e Set'},
+              { label: 'Comparando Map e Object'},
+              { label: 'Métodos de Map e Set'},
+            ],
+          },
+          {
+            label: 'Proxy ',
+            children: [
+              { label: 'Criando objetos Proxy'},
+              { label: 'Manipulação de objetos com Proxy'},
+              { label: 'Armazenando dados em cache com Proxy'},
+            ],
+          },
+          {
+            label: 'Async/await',
+            children: [
+              { label: 'Sintaxe de async/await'},
+              { label: 'Encadeamento de funções assíncronas'},
+              { label: 'Tratamento de erros com async/awai'},
+            ],
+          },
+          {
+            label:'Generators',
+          },
+          {
+            label:'Maps-weakmaps',
+          },
+          {
+            label:'New-features',
+          },
+          {
+            label:'	Spread e rest',
+          },
+          {
+            label:'Symbols-iterators',
+          },
+        ],
+      },
     ],
   },
 ];
