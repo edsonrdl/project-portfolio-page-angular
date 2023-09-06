@@ -378,7 +378,6 @@ export const ModelListAcademic = [
               { label: 'condicionais',
               children:[
                 {label:'if'},
-                {label:'else'},
                 {label:'else if'},
                 {label:'switch'},
               ] },
@@ -687,72 +686,135 @@ export const ModelListAcademic = [
           {
             label: 'Sintaxe do ES6',
             children: [
-              { label: 'Spread syntax',},
-              { label: 'Default parameters '},
+              { label: 'class',},
+              { label: 'constructor'},
+              { label: 'extends'},
+              { label: 'super'},
+              { label: 'get e set'},
+              { label: 'static'},
+              { label: 'instance'},
             ],
           },
           {
-            label: 'Promises',
+            label: 'Encapsulamento',
             children: [
-              { label: 'Sintaxe de promises'},
-              { label: 'Encadeamento de promises'},
-              { label: 'Tratamento de erros com promises'},
+              { label: 'Atributos privados e públicos'},
+              { label: 'Métodos privados e públicos'},
+              { label: 'Closures'},
             ],
           },
           {
-            label: 'Destructuring',
+            label: 'Herança',
             children: [
-              { label: 'Destructuring de arrays'},
-              { label: 'Destructuring de objetos'},
-              { label: 'Destructuring de parâmetros de funções'},
+              { label: 'Classe pai e classe filha'},
+              { label: 'Sobrescrita de métodos'},
+              { label: 'Polimorfismo'},
             ],
           },
           {
-            label: 'Iteradores e iteráveis',
+            label: 'Interfaces',
             children: [
-              { label: 'Sintaxe de iteradores'},
-              { label: 'Criando iteráveis personalizados'},
-              { label: 'Símbolo iterator'},
+              { label: 'onceito de interface'},
+              { label: 'Implementação de interfaces em JavaScrip'},
             ],
           },
           {
-            label: 'Maps e sets',
+            label: 'Design Patterns',
             children: [
-              { label: 'Sintaxe de Map e Set'},
-              { label: 'Comparando Map e Object'},
-              { label: 'Métodos de Map e Set'},
+              { label: 'Singleton'},
+              { label: 'Factory Method'},
+              { label: 'Observer'},
+              { label: 'Strategy'},
+              { label: 'Decorator'},
             ],
           },
           {
-            label: 'Proxy ',
+            label: 'Testes Unitários',
             children: [
-              { label: 'Criando objetos Proxy'},
-              { label: 'Manipulação de objetos com Proxy'},
-              { label: 'Armazenando dados em cache com Proxy'},
+              { label: 'Mocha e Chai'},
+              { label: 'Testes de unidade em classes e objetos'},
+
             ],
           },
           {
-            label: 'Async/await',
+            label: 'Melhores práticas',
             children: [
-              { label: 'Sintaxe de async/await'},
-              { label: 'Encadeamento de funções assíncronas'},
-              { label: 'Tratamento de erros com async/awai'},
+              { label: 'Organização de classes e objetos'},
+              { label: 'Boas práticas de nomeação de variáveis e métodos'},
+              { label: 'Uso de módulos e namespaces'},
+            ],
+          },
+        ],
+      },
+      {
+        label: 'TypeScript',
+        children: [
+          {
+            label: '',
+            children: [
+              { label: '' },
             ],
           },
           {
-            label:'Generators',
+            label: 'Sintaxe do ES6',
+            children: [
+              { label: 'class',},
+              { label: 'constructor'},
+              { label: 'extends'},
+              { label: 'super'},
+              { label: 'get e set'},
+              { label: 'static'},
+              { label: 'instance'},
+            ],
           },
           {
-            label:'Maps-weakmaps',
+            label: 'Encapsulamento',
+            children: [
+              { label: 'Atributos privados e públicos'},
+              { label: 'Métodos privados e públicos'},
+              { label: 'Closures'},
+            ],
           },
           {
-            label:'New-features',
+            label: 'Herança',
+            children: [
+              { label: 'Classe pai e classe filha'},
+              { label: 'Sobrescrita de métodos'},
+              { label: 'Polimorfismo'},
+            ],
           },
           {
-            label:'	Spread e rest',
+            label: 'Interfaces',
+            children: [
+              { label: 'onceito de interface'},
+              { label: 'Implementação de interfaces em JavaScrip'},
+            ],
           },
           {
-            label:'Symbols-iterators',
+            label: 'Design Patterns',
+            children: [
+              { label: 'Singleton'},
+              { label: 'Factory Method'},
+              { label: 'Observer'},
+              { label: 'Strategy'},
+              { label: 'Decorator'},
+            ],
+          },
+          {
+            label: 'Testes Unitários',
+            children: [
+              { label: 'Mocha e Chai'},
+              { label: 'Testes de unidade em classes e objetos'},
+
+            ],
+          },
+          {
+            label: 'Melhores práticas',
+            children: [
+              { label: 'Organização de classes e objetos'},
+              { label: 'Boas práticas de nomeação de variáveis e métodos'},
+              { label: 'Uso de módulos e namespaces'},
+            ],
           },
         ],
       },
